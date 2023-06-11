@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Chuck Norris Jokes Api</title>
+
+    <meta charset="utf-8"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <link href="https://api.chucknorris.io/css/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>
+            <a class="hvr-buzz-out" href="/" title="Chuck Norris Jokes Api for OneFlow - JSON API for random Chuck Norris jokes">
+            </a>
+        </h1>
+    </header>
+    <div id="content">
+    <section>
+        <h3>Chucknorris API</h3>
+        <p><b>Chucknorris API for OneFlow</b> is a JSON API for hand curated Chuck
+            Norris facts. 
+        </p>
+    </section>
+    <section>
+        <h3>Usage</h3>
+
+        <p>Retrieve list of all chuck jokes in JSON format.</p>
+        <pre><code class="request get"><a href="/list"
+                                          title="Retrieve list of all chuck jokes in JSON format.">http://chucknorris.home.lab/list</a></code></pre>
+        <p>Example response:</p>
+        <pre>        <code class="response">
+            {<br>
+                "id" : "<span id="response_id">9D-5xHGrRpiegWjjV4fRLg</span>",<br>
+                "joke" : "<span id="response_text">Chuck Norris keeps a grenade launcher hidden inside his grand piano.</span>"<br>
+            },<br>
+            {<br>
+                "id" : "<span id="response_id">jXl332D3Ttmmn-eraYC9iA</span>",<br>
+                "joke" : "<span id="response_text">When Chuck Norris smiles, someone dies. When he's smiling while roundhouse kicking someone, then two people die.</span>"<br>
+            }
+        </code>
+        </pre>
+
+        <p>Retrieve a random chuck joke in JSON format.</p>
+        <pre><code class="request get"><a href="/rand"
+                                          title="Retrieve a random chuck norris joke in JSON format.">http://chucknorris.home.lab/rand</a></code></pre>
+        <p>Example response:</p>
+        <pre>        <code class="response">
+            {<br>
+                "id" : "<span id="response_id">9D-5xHGrRpiegWjjV4fRLg</span>",<br>
+                "joke" : "<span id="response_text">Chuck Norris keeps a grenade launcher hidden inside his grand piano.</span>"<br>
+            }
+        </code>
+        </pre>
+
+        <p>Retrieve a chuck joke by ID.</p>
+        <pre><code class="request get"><a href="/joke/{id}"
+                                          title="Retrieve a chuck joke by ID.">http://chucknorris.home.lab/joke/9D-5xHGrRpiegWjjV4fRLg</a></code></pre>
+        <p>Example response:</p>
+        <pre>        <code class="response">
+            {<br>
+                "id" : "<span id="response_id">9D-5xHGrRpiegWjjV4fRLg</span>",<br>
+                "joke" : "<span id="response_text">Chuck Norris keeps a grenade launcher hidden inside his grand piano.</span>"<br>
+            }
+        </code>
+        </pre>
+
+
+    <footer>
+        <small class="disclaimer">This API was developed for OneFlow as an assignment and not for commercial use.
+        </small>
+    </footer>
+</div>
+</body>
+</html>
